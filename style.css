@@ -15,6 +15,7 @@ header {
 .container {
   width: 90%;
   max-width: 1090px;
+  min-width: none;
   margin: 0 auto;
 }
 
