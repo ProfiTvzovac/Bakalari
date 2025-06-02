@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prijava za volontere - miniTVZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <div class="logo-container">
+        <img src="logo.png" alt="miniTVZ logo" class="logo" />
+        <span class="brand-name">miniTVZ</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="radionice.html">Radionice</a></li>
+          <li><a href="volonteri.html">Volonteri</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container prijava-section">
+      <h1>Prijava za volontere</h1>
+      <form action="#" method="post" class="prijava-form">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" required />
+
+        <label for="email">E-mail adresa (TVZ)</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="godina">Godina studiranja</label>
+        <select id="godina" name="godina" required>
+          <option value="">-- Odaberi --</option>
+          <option value="1">1.</option>
+          <option value="2">2.</option>
+          <option value="3">3.</option>
+          <option value="4">4.</option>
+          <option value="5">5.</option>
+        </select>
+
+        <label for="smjer">Studijski smjer</label>
+        <select id="smjer" name="smjer" required>
+          <option value="">-- Odaberi --</option>
+          <option value="Računarstvo">Računarstvo</option>
+          <option value="Elektrotehnika">Elektrotehnika</option>
+          <option value="Informatika">Informatika</option>
+          <option value="Mehatronika">Mehatronika</option>
+          <option value="Graditeljstvo">Graditeljstvo</option>
+          <option value="Strojarstvo">Strojarstvo</option>
+        </select>
+
+        <label for="motivacija">Motivacija za sudjelovanje</label>
+        <textarea id="motivacija" name="motivacija" rows="4" required></textarea>
+
+        <button type="submit" class="cta">Pošalji prijavu</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 miniTVZ – Tehničko veleučilište u Zagrebu</p>
+    </div>
+  </footer>
+</body>
+</html>
+
