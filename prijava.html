@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prijava na radionicu - miniTVZ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-bar">
+      <div class="logo-container">
+        <img src="logo.png" alt="miniTVZ logo" class="logo" />
+        <span class="brand-name">miniTVZ</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Početna</a></li>
+          <li><a href="radionice.html">Radionice</a></li>
+          <li><a href="volonteri.html">Volonteri</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container prijava-section">
+      <h1>Prijava na radionicu</h1>
+      <form action="#" method="post" class="prijava-form">
+        <label for="ime_dijete">Ime i prezime djeteta</label>
+        <input type="text" id="ime_dijete" name="ime_dijete" required>
+
+        <label for="ime_roditelj">Ime i prezime roditelja</label>
+        <input type="text" id="ime_roditelj" name="ime_roditelj" required>
+
+        <label for="email">Email adresa</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="radionica">Odaberi radionicu</label>
+        <select id="radionica" name="radionica" required>
+          <option value="">-- Odaberi --</option>
+          <option value="TeVeZekanje">TeVeZekanje s robotićima</option>
+          <option value="LEGOobotika">LEGOobotika uz Spike Essential</option>
+          <option value="CrtajProgramiraj">Crtaj, programiraj, dizajniraj!</option>
+          <option value="UnpluggedMisa">Programiraj robota Miša</option>
+        </select>
+
+        <label for="dob">Dob djeteta</label>
+        <input type="number" id="dob" name="dob" min="4" max="18" required>
+
+        <button type="submit" class="cta">Pošalji prijavu</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 miniTVZ – Tehničko veleučilište u Zagrebu</p>
+    </div>
+  </footer>
+</body>
+</html>
+
